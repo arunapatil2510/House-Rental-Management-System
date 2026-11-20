@@ -1,0 +1,128 @@
+/* USER DASHBOARD STYLES (OWNER & TENANT) */
+.dashboard-page {
+  min-height: 100vh;
+  background: #f7f8fa;
+}
+
+.dashboard-content {
+  padding: 65px 9%;
+}
+
+.dashboard-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  margin: 15px 0 10px;
+}
+
+.dashboard-content > p {
+  color: #718096;
+  margin-bottom: 30px;
+}
+
+.dashboard-card {
+  background: white;
+  padding: 28px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px #172b4d08;
+}
+
+.dashboard-card h2 {
+  margin-bottom: 18px;
+}
+
+.dashboard-card p {
+  margin: 12px 0;
+  color: #64748b;
+}
+
+.owner-form-card {
+  margin-top: 25px;
+}
+
+.property-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.property-form label {
+  font-weight: 600;
+  color: #26344a;
+}
+
+.property-form input,
+.property-form textarea,
+.property-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dce2eb;
+  border-radius: 8px;
+  font: inherit;
+  box-sizing: border-box;
+  background: white;
+}
+
+.property-form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.property-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.property-form-row > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.property-message {
+  color: #176b45;
+  font-weight: 600;
+}
+
+.owner-listings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.owner-listing {
+  padding: 18px;
+  border: 1px solid #e5e9f0;
+  border-radius: 12px;
+  background: #fafbfe;
+}
+
+.owner-listing h3 {
+  margin-top: 0;
+}
+
+.owner-property-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.owner-property-actions button {
+  padding: 9px 22px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.property-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .dashboard-content {
+    padding: 40px 6%;
+  }
+}
